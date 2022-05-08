@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "play": "node build/main.js"
+  },
+  "author": "Oleh Hnatkovskyi",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "terminal-kit": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1",
+    "@types/terminal-kit": "^1.28.4"
+  }
+}
