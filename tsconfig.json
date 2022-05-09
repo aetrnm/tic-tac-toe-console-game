@@ -6,7 +6,6 @@
     "esModuleInterop": true,
     "rootDir": "src/",
     "outDir": "build/",
-    // "baseUrl": "src/",
     "watch": true
   }
 }
