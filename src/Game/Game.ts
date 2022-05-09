@@ -1,7 +1,5 @@
-import GameField from "GameField/GameField";
-import Player from "Player/Player";
-
-import IGame from "Game/IGame";
+import Player from "../Player/Player.js";
+import GameField from "../GameField/GameField.js";
 
 export default class Game implements IGame {
   player1: Player;
@@ -16,4 +14,11 @@ export default class Game implements IGame {
     this.player2 = player2;
     this.gameField = new GameField();
   }
+}
+
+interface IGame {
+  player1: Player;
+  player2: Player;
+  gameField: GameField;
+  startGame(): void;
 }

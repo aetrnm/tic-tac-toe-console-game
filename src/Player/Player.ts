@@ -1,7 +1,6 @@
 import tk from "terminal-kit";
 
-import IPlayer from "./IPlayer";
-import GameField from "GameField/GameField";
+import GameField from "../GameField/GameField.js";
 
 import { clearTerminal } from "../tools/clearTerminal.js";
 
@@ -60,4 +59,12 @@ export default class Player implements IPlayer {
   setOpponent(opponent: Player): void {
     this.opponent = opponent;
   }
+}
+
+interface IPlayer {
+  name: string;
+  sign: string;
+  opponent: IPlayer;
+  setOpponent(opponent: IPlayer): void;
+  turn(gameField: GameField): void;
 }

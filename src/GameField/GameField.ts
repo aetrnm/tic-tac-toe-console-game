@@ -1,5 +1,3 @@
-import IGameField from "./IGameField";
-
 export default class GameField implements IGameField {
   field: string[];
 
@@ -64,4 +62,10 @@ export default class GameField implements IGameField {
     const emptyCellIndex = this.field.indexOf(" ");
     return emptyCellIndex === -1;
   }
+}
+
+interface IGameField {
+  field: string[];
+  isFilled(): boolean;
+  isWon(sign: string): boolean;
 }
