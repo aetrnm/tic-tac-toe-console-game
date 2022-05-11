@@ -22,14 +22,7 @@ export default class Player implements IPlayer {
     term.gridMenu(
       gameField.field,
       {
-        width: 10,
-        leftPadding: "|",
-        selectedLeftPadding: "|",
-        rightPadding: "|",
-        selectedRightPadding: "|",
-        style: term.green,
-        selectedStyle: term.yellow,
-        exitOnUnexpectedKey: true,
+        ...options,
       },
       (error, response) => {
         if (gameField.field[response.selectedIndex] !== " ") {
@@ -68,3 +61,14 @@ interface IPlayer {
   setOpponent(opponent: IPlayer): void;
   turn(gameField: GameField): void;
 }
+
+const options = {
+  width: 10,
+  leftPadding: "|",
+  selectedLeftPadding: "|",
+  rightPadding: "|",
+  selectedRightPadding: "|",
+  style: term.green,
+  selectedStyle: term.yellow,
+  exitOnUnexpectedKey: true,
+};
