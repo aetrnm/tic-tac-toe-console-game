@@ -2,7 +2,7 @@ import tk from "terminal-kit";
 
 import GameField from "../GameField/GameField.js";
 
-import { clearTerminal } from "../tools/clearTerminal.js";
+import clearTerminal from "../tools/clearTerminal.js";
 
 const term = tk.terminal;
 

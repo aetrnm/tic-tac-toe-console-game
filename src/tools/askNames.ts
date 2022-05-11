@@ -2,7 +2,7 @@ import inquirer from "inquirer";
 
 import Player from "../Player/Player.js";
 
-export async function askNames(): Promise<Player[]> {
+export default async function askNames(): Promise<Player[]> {
   const answer1 = await inquirer.prompt({
     name: "player_name",
     type: "input",

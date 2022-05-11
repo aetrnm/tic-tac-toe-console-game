@@ -1,8 +1,8 @@
 import Game from "./Game/Game.js";
 import Player from "./Player/Player.js";
 
-import { clearTerminal } from "./tools/clearTerminal.js";
-import { askNames } from "./tools/askNames.js";
+import clearTerminal from "./tools/clearTerminal.js";
+import askNames from "./tools/askNames.js";
 
 clearTerminal();
 console.log("Welcome to the Tic Tac Toe game!");
