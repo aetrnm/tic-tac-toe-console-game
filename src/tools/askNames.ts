@@ -6,7 +6,7 @@ export default async function askNames(): Promise<Player[]> {
   const answer1 = await inquirer.prompt({
     name: "player_name",
     type: "input",
-    message: "What is first (X) player's name?",
+    message: "What is the first (X) player's name?",
     default() {
       return "Player1";
     },
@@ -17,7 +17,7 @@ export default async function askNames(): Promise<Player[]> {
   const answer2 = await inquirer.prompt({
     name: "player_name",
     type: "input",
-    message: "What is second (O) player's name?",
+    message: "What is the second (O) player's name?",
     default() {
       return "Player2";
     },
