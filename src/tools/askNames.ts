@@ -8,7 +8,7 @@ export default async function askNames(): Promise<Player[]> {
     type: "input",
     message: "What is the first (X) player's name?",
     default() {
-      return "Player1";
+      return "Player 1";
     },
   });
 
@@ -19,7 +19,7 @@ export default async function askNames(): Promise<Player[]> {
     type: "input",
     message: "What is the second (O) player's name?",
     default() {
-      return "Player2";
+      return "Player 2";
     },
   });
 
